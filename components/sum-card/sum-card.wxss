@@ -1,0 +1,54 @@
+@import '/asstes/iconfont/iconfont.wxss';
+.sum-card {
+  padding: 30rpx;
+}
+.sum-card .header {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  padding: 0 30rpx;
+  background-color: seagreen;
+}
+.sum-card .title {
+  font-size: 48rpx;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 30rpx;
+  word-break: break-all;
+}
+.sum-card .content {
+  background-color: #fff;
+  padding: 30rpx;
+}
+.sum-card .cover-img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: seagreen;
+  margin: 15rpx auto;
+}
+.sum-card .section {
+  padding: 30rpx;
+  text-indent: 2em;
+}
+.sum-card .footer {
+  background-color: #fff;
+  padding: 0 60rpx 30rpx 60rpx;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sum-card .footer .look,
+.sum-card .footer .share {
+  display: flex;
+  align-items: center;
+}
+.sum-card .footer .iconfont {
+  margin-right: 15rpx;
+  color: seagreen;
+}
+.sum-card .footer .wx-eyes {
+  font-size: 48rpx;
+}

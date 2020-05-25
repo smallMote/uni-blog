@@ -1,0 +1,5 @@
+<view class="tag">
+  <view wx:for="{{tagList}}" wx:key="name" class="tag" style="background-color:{{item.color}}">
+    {{ item.name }}
+  </view>
+</view>

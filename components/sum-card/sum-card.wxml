@@ -1,0 +1,21 @@
+<view class="sum-card">
+  <view class="header">
+    <text>{{ createDate || defDate }}</text>
+  </view>
+  <view class="content">
+    <tags tags="{{ tags || 'Fontend--#108ee9,Nodejs--purple,Vue--seagreen' }}"></tags>
+    <text class="title">{{ title || '使用koa处理vue项目中的history路由模式' }}</text>
+    <view wx:if="{{coverImgUrl}}" class="cover-img"></view>
+    <view class="section">{{ summary || defSummary }}</view>
+  </view>
+  <view class="footer">
+    <view class="look">
+      <text class="iconfont wx-eyes"></text>
+      10086
+    </view>
+    <view class="share">
+      <text class="iconfont wx-share"></text>
+      668
+    </view>
+  </view>
+</view>

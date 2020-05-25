@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "sum-card": "/components/sum-card/sum-card"
+  }
+}
