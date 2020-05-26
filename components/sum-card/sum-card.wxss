@@ -1,4 +1,4 @@
-@import '/asstes/iconfont/iconfont.wxss';
+@import '/pages/asstes/iconfont/iconfont.wxss';
 .sum-card {
   padding: 30rpx;
 }
@@ -14,6 +14,7 @@
   font-weight: 800;
   display: inline-block;
   margin-top: 30rpx;
+  margin-bottom: 15rpx;
   word-break: break-all;
 }
 .sum-card .content {
@@ -27,6 +28,10 @@
   overflow: hidden;
   background-color: seagreen;
   margin: 15rpx auto;
+}
+.sum-card .cover-img .img {
+  width: 200rpx;
+  height: 200rpx;
 }
 .sum-card .section {
   padding: 30rpx;

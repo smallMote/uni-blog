@@ -1,3 +1,11 @@
 <view class="home container">
-  <sum-card></sum-card>
+  <sum-card 
+    wx:for="{{articles}}" 
+    wx:key="id" 
+    tags="{{item.tags}}"
+    title="{{item.title}}"
+    createDate="{{item.createTime}}" 
+    summary="{{item.summary}}"
+    coverImgUrl="{{item.coverImgUrl}}"
+  />
 </view>

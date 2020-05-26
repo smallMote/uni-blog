@@ -20,14 +20,14 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "asstes/home.png",
-        "selectedIconPath": "asstes/home-active.png"
+        "iconPath": "pages/asstes/home.png",
+        "selectedIconPath": "pages/asstes/home-active.png"
       },
       {
         "pagePath": "pages/index/index",
         "text": "Me",
-        "iconPath": "asstes/me.png",
-        "selectedIconPath": "asstes/me-active.png"
+        "iconPath": "pages/asstes/me.png",
+        "selectedIconPath": "pages/asstes/me-active.png"
       }
     ]
   },
