@@ -1,5 +1,30 @@
+@import '../asstes/iconfont/iconfont.wxss';
 .article-page {
   padding: 30rpx;
+}
+.article-page .title {
+  font-size: 36rpx;
+  color: seagreen;
+  font-weight: 500;
+}
+.article-page .info-group {
+  color: seagreen;
+}
+.article-page .author {
+  margin-bottom: 30rpx;
+  margin-top: 15rpx;
+}
+.article-page .author .label {
+  color: #000;
+}
+.article-page .author .date {
+  margin-left: 30rpx;
+}
+.article-page .author,
+.article-page .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .content {
   word-break: break-all;

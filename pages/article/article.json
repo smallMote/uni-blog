@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "tags": "/components/tags/tags"
+    "tags": "/components/tags/tags",
+    "wemark": "../../wemark/wemark"
   }
 }

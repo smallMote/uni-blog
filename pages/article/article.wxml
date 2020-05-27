@@ -3,15 +3,23 @@
     <text class="title">{{ title }}</text>
     <view class="info-group">
       <view class="author">
-        By <text>{{ author }}</text>
+        <text><text class="label">By</text> {{ author }}</text>
+        <text class="date">{{ createTime }}</text>
       </view>
       <view class="info">
-
+        <view class="comments">
+          <text class="iconfont wx-eyes"></text>
+          {{ comments || 'No Comment' }}
+        </view>
+        <view class="shares">
+          <text class="iconfont wx-share"></text>
+          {{ shares || 'No Shares' }}
+        </view>
       </view>
     </view>
   </view>
   <view class="body">
     <tags tags="{{ tags }}"></tags>
-    <rich-text class="content" nodes="{{content}}"></rich-text>
+    <wemark md="{{content}}" link highlight type="wemark"></wemark>
   </view>
 </view>
