@@ -1,4 +1,4 @@
-<view class="tag">
+<view class="tag-group">
   <view wx:for="{{tagList}}" wx:key="name" class="tag" style="background-color:{{item.color}}">
     {{ item.name }}
   </view>

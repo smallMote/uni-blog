@@ -10,12 +10,13 @@
   background-color: seagreen;
 }
 .sum-card .title {
-  font-size: 48rpx;
+  font-size: 36rpx;
   font-weight: 800;
-  display: inline-block;
-  margin-top: 30rpx;
-  margin-bottom: 15rpx;
+  line-height: 60rpx;
+  display: inline;
   word-break: break-all;
+  color: seagreen;
+  border-bottom: 1px dotted #2e8b57;
 }
 .sum-card .content {
   background-color: #fff;
@@ -27,11 +28,14 @@
   border-radius: 50%;
   overflow: hidden;
   background-color: seagreen;
-  margin: 15rpx auto;
+  margin: 30rpx auto 0 auto;
 }
 .sum-card .cover-img .img {
   width: 200rpx;
   height: 200rpx;
+}
+.summary {
+  margin-top: 30rpx;
 }
 .sum-card .section {
   padding: 30rpx;

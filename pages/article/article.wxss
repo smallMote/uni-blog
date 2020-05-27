@@ -1,0 +1,6 @@
+.article-page {
+  padding: 30rpx;
+}
+.content {
+  word-break: break-all;
+}

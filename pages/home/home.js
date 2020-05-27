@@ -3,11 +3,13 @@ Page({
   data: {
     articles: []
   },
-  async onLoad() {
-    const result = await request('GET', '', '/article')
+  onLoad() {
+    request('GET', '', '/article')
+      .then(res => {
+        this.setData({
+          articles: res.data
+        })
+      })
       .catch(e => console.log(e))
-    this.setData({
-      articles: result.data
-    })
   }
 })

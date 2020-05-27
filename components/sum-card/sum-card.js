@@ -6,6 +6,7 @@ Component({
     createTime: new Date().toLocaleString()
   },
   properties: {
+    articleId: Number,
     createDate: String,
     tags: String,
     coverImgUrl: String,
@@ -20,6 +21,12 @@ Component({
     }
   },
   methods: {
-    formatTags
+    formatTags,
+    go2details() {
+      const { articleId } = this.properties
+      wx.navigateTo({
+        url: `../../pages/article/article?id=${articleId}`
+      })
+    }
   }
 })

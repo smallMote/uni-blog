@@ -3,8 +3,8 @@
     <text>{{ createTime }}</text>
   </view>
   <view class="content">
-    <tags tags="{{ tags || 'Fontend--#108ee9,Nodejs--purple,Vue--seagreen' }}"></tags>
-    <text class="title">{{ title || '使用koa处理vue项目中的history路由模式' }}</text>
+    <tags tags="{{ tags }}"></tags>
+    <text bind:tap="go2details" class="title">{{ title }}</text>
     <view wx:if="{{coverImgUrl}}" class="cover-img">
       <image 
         class="img" 
@@ -13,8 +13,9 @@
       >
       </image>
     </view>
-    <!-- <view class="section">{{ summary || defSummary }}</view> -->
-    <rich-text nodes="{{summary}}"></rich-text>
+    <view class="summary">
+      <rich-text nodes="{{summary}}"></rich-text>
+    </view>
   </view>
   <view class="footer">
     <view class="look">
@@ -23,7 +24,7 @@
     </view>
     <view class="share">
       <text class="iconfont wx-share"></text>
-      668
+      <text wx:if="{{!!shares}}">{{ shares }}</text>
     </view>
   </view>
 </view>

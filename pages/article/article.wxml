@@ -1,0 +1,17 @@
+<view class="container article-page">
+  <view class="header">
+    <text class="title">{{ title }}</text>
+    <view class="info-group">
+      <view class="author">
+        By <text>{{ author }}</text>
+      </view>
+      <view class="info">
+
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <tags tags="{{ tags }}"></tags>
+    <rich-text class="content" nodes="{{content}}"></rich-text>
+  </view>
+</view>

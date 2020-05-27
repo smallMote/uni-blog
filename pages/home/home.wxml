@@ -2,6 +2,7 @@
   <sum-card 
     wx:for="{{articles}}" 
     wx:key="id" 
+    articleId="{{item.id}}"
     tags="{{item.tags}}"
     title="{{item.title}}"
     createDate="{{item.createTime}}" 
