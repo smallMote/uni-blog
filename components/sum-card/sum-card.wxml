@@ -1,10 +1,14 @@
 <view class="sum-card">
   <view class="header">
     <text>{{ createTime }}</text>
+    <text bind:tap="go2details" class="look-details">more ></text>
   </view>
   <view class="content">
     <tags tags="{{ tags }}"></tags>
     <text bind:tap="go2details" class="title">{{ title }}</text>
+    <view class="author">
+      By<text class="author-name">{{ author }}</text>
+    </view>
     <view wx:if="{{coverImgUrl}}" class="cover-img">
       <image 
         class="img" 
@@ -22,9 +26,15 @@
       <text class="iconfont wx-eyes"></text>
       10086
     </view>
-    <view class="share">
+    <button 
+      open-type='share' 
+      class="share"
+      data-id="{{articleId}}"
+      data-title="{{title}}"
+      data-img="{{coverImgUrl}}"
+    >
       <text class="iconfont wx-share"></text>
-      <text wx:if="{{!!shares}}">{{ shares }}</text>
-    </view>
+      <text>{{ shares || 'No Shares' }}</text>
+    </button>
   </view>
 </view>

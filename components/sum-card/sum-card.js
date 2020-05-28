@@ -11,13 +11,20 @@ Component({
     tags: String,
     coverImgUrl: String,
     title: String,
-    summary: String
+    summary: String,
+    author: String
   },
   lifetimes: {
     attached() {
       this.setData({
         createTime: formatTime(this.properties.createDate)
       })
+    }
+  },
+  onShareAppMessage(opt) {
+    return {
+      title: this.data.title,
+      path: `pages/article/article?id=${this.data.articleId}`
     }
   },
   methods: {

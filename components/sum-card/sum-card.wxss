@@ -8,6 +8,12 @@
   color: #fff;
   padding: 0 30rpx;
   background-color: seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sum-card .look-details {
+  color: rgba(255, 255, 255, 0.8);
 }
 .sum-card .title {
   font-size: 36rpx;
@@ -17,6 +23,14 @@
   word-break: break-all;
   color: seagreen;
   border-bottom: 1px dotted #2e8b57;
+}
+.sum-card .author {
+  margin-top: 15rpx;
+}
+.sum-card .author .author-name  {
+  color: seagreen;
+  margin-left: 12rpx;
+  font-weight: 500;
 }
 .sum-card .content {
   background-color: #fff;
@@ -53,6 +67,17 @@
 .sum-card .footer .share {
   display: flex;
   align-items: center;
+}
+.sum-card .footer .share {
+  padding: 0;
+  margin: 0;
+  font-size: initial;
+  font-weight: initial;
+  color: inherit;
+  background-color: initial;
+  line-height: unset;
+  text-align: unset;
+  width: unset;
 }
 .sum-card .footer .iconfont {
   margin-right: 15rpx;

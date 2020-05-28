@@ -4,17 +4,17 @@
     <view class="info-group">
       <view class="author">
         <text><text class="label">By</text> {{ author }}</text>
-        <text class="date">{{ createTime }}</text>
+        <text class="date">{{ createDate }}</text>
       </view>
       <view class="info">
         <view class="comments">
           <text class="iconfont wx-eyes"></text>
           {{ comments || 'No Comment' }}
         </view>
-        <view class="shares">
+        <button open-type='share' class="shares">
           <text class="iconfont wx-share"></text>
           {{ shares || 'No Shares' }}
-        </view>
+        </button>
       </view>
     </view>
   </view>

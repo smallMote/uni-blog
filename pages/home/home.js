@@ -1,7 +1,9 @@
 const { request } = require('../../utils/api')
+const { delay } = require('../../utils/util')
 Page({
   data: {
-    articles: []
+    articles: [],
+    scrollTop: 0
   },
   onLoad() {
     request('GET', '', '/article')
@@ -11,5 +13,25 @@ Page({
         })
       })
       .catch(e => console.log(e))
+  },
+  onPageScroll(e) {
+    let _this = this
+    delay(() => {
+      _this.setData({
+        scrollTop: e.scrollTop
+      })
+    }, 300)
+  },
+  onShareAppMessage(opt) {
+    if (!opt.target) { // 三点分享
+      return
+    }
+    // 文章详情分享
+    const { id, title, img } = opt.target.dataset
+    return {
+      title: title,
+      path: `pages/article/article?id=${id}`,
+      imageUrl: img || 'https://s2.ax1x.com/2019/08/05/eRwIrq.th.png'
+    }
   }
 })

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "sum-card": "/components/sum-card/sum-card"
+    "sum-card": "/components/sum-card/sum-card",
+    "back-top": "/components/back-top/back-top"
   }
 }

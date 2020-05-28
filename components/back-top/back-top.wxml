@@ -1,0 +1,3 @@
+<view bind:tap="backTop" class="back-top-btn">
+  Top
+</view>

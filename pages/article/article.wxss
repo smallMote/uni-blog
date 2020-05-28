@@ -7,6 +7,11 @@
   color: seagreen;
   font-weight: 500;
 }
+.article-page .header {
+  box-shadow: 0 0  15rpx #ccc;
+  padding: 15rpx;
+  border-radius: 6PX;
+}
 .article-page .info-group {
   color: seagreen;
 }
@@ -25,6 +30,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.article-page .info .shares {
+  padding: 0;
+  margin: 0;
+  font-size: initial;
+  font-weight: initial;
+  color: inherit;
+  background-color: initial;
+  line-height: unset;
+  text-align: unset;
+  width: unset;
 }
 .content {
   word-break: break-all;

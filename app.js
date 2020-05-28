@@ -33,6 +33,12 @@ App({
       }
     })
   },
+  onShow(ctx) {
+    // console.log(ctx)
+    // wx.getShareInfo('shareTicket').then(res => {
+    //   console.log('分享转发信息', res)
+    // })
+  },
   globalData: {
     userInfo: null
   }
