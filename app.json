@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/map/map",
     "pages/home/home",
     "pages/article/article",
     "pages/index/index",
@@ -10,6 +11,11 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Luckyoung",
     "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息用于小程序定位"
+    }
   },
   "tabBar": {
     "color": "#000",
@@ -23,6 +29,12 @@
         "text": "首页",
         "iconPath": "pages/asstes/home.png",
         "selectedIconPath": "pages/asstes/home-active.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "Me",
+        "iconPath": "pages/asstes/local.png",
+        "selectedIconPath": "pages/asstes/local-active.png"
       },
       {
         "pagePath": "pages/index/index",

@@ -1,0 +1,23 @@
+<view class="map-page">
+  <!-- <button bind:tap="chooseMap">精确选择</button> -->
+  <view 
+    class="{{bwClassName ? 'active point-switch' : 'point-switch'}}" 
+    bind:tap="pointAction"
+  >
+    {{ pointMode ? '关闭' : '开启' }}标点
+  </view>
+  <map 
+    id="map" 
+    name="map"
+    scale="16"
+    show-compass="{{true}}"
+    show-scale="{{true}}"
+    enable-rotate="{{true}}"
+    markers="{{markers}}"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    bind:tap="addPoint"
+    bind:markertap="delPoint"
+  >
+  </map>
+</view>

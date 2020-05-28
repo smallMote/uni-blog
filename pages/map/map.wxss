@@ -1,0 +1,60 @@
+.map-page {
+  width: 100%;
+  height: 100vh;
+}
+#map {
+  width: 100%;
+  height: 100vh;
+}
+.point-switch {
+  width: 100%;
+  background-color: seagreen;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.point-switch::before {
+  content: " ";
+  width: 80%;
+  height: 100rpx;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+}
+.point-switch.active::before {
+  animation: bowen 0.6s ease-out;
+}
+@keyframes bowen {
+  0% {
+    opacity: 0;
+    width: 50%;
+    border-radius: 100rpx;
+  }
+  50% {
+    opacity: 0.8;
+    width: 60%;
+    border-radius: 80rpx;
+  }
+  60% {
+    opacity: 0.8;
+    width: 70%;
+    border-radius: 50rpx;
+  }
+  70% {
+    opacity: 1;
+    width: 80%;
+    border-radius: 25rpx;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}

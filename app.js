@@ -5,7 +5,6 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
@@ -32,12 +31,6 @@ App({
         }
       }
     })
-  },
-  onShow(ctx) {
-    // console.log(ctx)
-    // wx.getShareInfo('shareTicket').then(res => {
-    //   console.log('分享转发信息', res)
-    // })
   },
   globalData: {
     userInfo: null
