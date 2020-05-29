@@ -1,23 +1,32 @@
 <view class="map-page">
-  <!-- <button bind:tap="chooseMap">精确选择</button> -->
-  <view 
+  <!-- <view   
     class="{{bwClassName ? 'active point-switch' : 'point-switch'}}" 
     bind:tap="pointAction"
   >
     {{ pointMode ? '关闭' : '开启' }}标点
-  </view>
+  </view> -->
   <map 
     id="map" 
     name="map"
-    scale="16"
+    scale="{{scale}}"
     show-compass="{{true}}"
     show-scale="{{true}}"
+    show-location="{{true}}"
     enable-rotate="{{true}}"
+    enable-satellite="{{satellite}}"
+    enable-traffic="{{traffic}}"
     markers="{{markers}}"
     latitude="{{latitude}}"
     longitude="{{longitude}}"
     bind:tap="addPoint"
     bind:markertap="delPoint"
+    bind:poitap="poiTap"
   >
+     <cover-view class="btn-group">
+      <button class="{{traffic ? 'btn active' : 'btn'}}" bind:tap="navigate2point">G</button>
+      <button class="btn" hover-class="active" bind:tap="reLocal">L</button>
+      <button class="{{bwClassName ? 'btn active' : 'btn'}}" bind:tap="pointAction">P</button>
+      <button class="{{satellite ? 'btn active' : 'btn'}}" bind:tap="toggleSatellite">S</button>
+    </cover-view>
   </map>
 </view>

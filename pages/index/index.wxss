@@ -19,3 +19,18 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.about {
+  position: absolute;
+  bottom: 30rpx;
+}
+.tips {
+  margin-top: 20vh;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32rpx;
+}
+.tips .tips-last {
+  margin-top: 30rpx;
+  display: block;
+}

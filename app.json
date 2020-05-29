@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/map/map",
     "pages/home/home",
-    "pages/article/article",
+    "pages/map/map",
     "pages/index/index",
+    "pages/article/article",
     "pages/logs/logs"
   ],
   "window": {
@@ -15,6 +15,12 @@
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息用于小程序定位"
+    }
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
     }
   },
   "tabBar": {
@@ -32,7 +38,7 @@
       },
       {
         "pagePath": "pages/map/map",
-        "text": "Me",
+        "text": "Map",
         "iconPath": "pages/asstes/local.png",
         "selectedIconPath": "pages/asstes/local-active.png"
       },

@@ -5,8 +5,15 @@
       获取头像昵称
     </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
+    <view class="tips">
+      <block>IT 成就梦想</block>
+      <text class="tips-last">努力向后浪推广</text>
+    </view>
+    <view class="about">
+      <image src="https://s2.ax1x.com/2019/08/05/eRwoq0.png" />
+    </view>
   </view>
 </view>
