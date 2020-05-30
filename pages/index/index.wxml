@@ -12,6 +12,7 @@
       <block>IT 成就梦想</block>
       <text class="tips-last">努力向后浪推广</text>
     </view>
+    <button class="" bind:tap="openScanCode">扫一扫</button>
     <view class="about">
       <image src="https://s2.ax1x.com/2019/08/05/eRwoq0.png" />
     </view>

@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/article/article",
     "pages/home/home",
     "pages/map/map",
     "pages/index/index",
-    "pages/article/article",
     "pages/logs/logs"
   ],
   "window": {

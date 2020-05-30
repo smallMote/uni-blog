@@ -20,6 +20,12 @@
   </view>
   <view class="body">
     <tags tags="{{ tags }}"></tags>
-    <wemark md="{{content}}" link highlight type="wemark"></wemark>
+    <wemark 
+      md="{{content}}" 
+      link 
+      highlight 
+      type="wemark"
+      bind:tap="clickLick"
+    ></wemark>
   </view>
 </view>

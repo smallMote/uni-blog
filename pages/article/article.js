@@ -33,6 +33,11 @@ Page({
       path: `pages/article/article?id=${this.data.id}`
     }
   },
-  methods: {
+  clickLick(e) {
+    const query = wx.createSelectorQuery().in(this)
+    query.selectAll('.header').node((res) => {
+      console.log(res)
+    })
+    query.exec()
   }
 })

@@ -1,4 +1,5 @@
 //index.js
+const mixin = require('./index.mixin')
 //获取应用实例
 const app = getApp()
 
@@ -50,5 +51,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  ...mixin
 })
