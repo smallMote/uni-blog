@@ -35,6 +35,8 @@ const delay = (function () {
     timer = setTimeout(callback, ms)
   }
 })()
+
+
 module.exports = {
   delay,
   formatTime,

@@ -9,10 +9,12 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
     <view class="tips">
-      <block>IT 成就梦想</block>
-      <text class="tips-last">努力向后浪推广</text>
+      <text class="title">Tips ！！！</text>
+      <text class="p first">由于这是个人开发小程序，在微信小程序运营规范下，超链接不支持跳转，目前正在寻找替代方案！</text>
+      <text class="p">开源地址:</text>
+      <text class="p">https://github.com/smallMote/uni-blog.git</text>
     </view>
-    <button class="" bind:tap="openScanCode">扫一扫</button>
+    <!-- <button class="" bind:tap="openScanCode">扫一扫</button> -->
     <view class="about">
       <image src="https://s2.ax1x.com/2019/08/05/eRwoq0.png" />
     </view>

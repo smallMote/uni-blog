@@ -25,12 +25,23 @@
   bottom: 30rpx;
 }
 .tips {
-  margin-top: 20vh;
-  text-align: center;
-  font-weight: 600;
   font-size: 32rpx;
+  padding: 25rpx;
+  margin: 50rpx;
+  margin-top: 10vh;
+  box-shadow: 0 0  15rpx #ccc;
+  border-radius: 6PX;
 }
-.tips .tips-last {
-  margin-top: 30rpx;
+.tips .title {
+  color: seagreen;
+  margin-bottom: 30rpx;
+  font-weight: 600;
+  text-align: center;
   display: block;
+}
+.tips .p {
+  display: block;
+}
+.tips .p.first {
+  padding-bottom: 30rpx;
 }

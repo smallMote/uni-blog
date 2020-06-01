@@ -1,4 +1,4 @@
-let plugin = requirePlugin('routePlan');
+// let plugin = requirePlugin('routePlan');
 
 module.exports = {
   // 获取位置
@@ -67,12 +67,6 @@ module.exports = {
       pointMode: !this.data.pointMode,
       bwClassName: !this.data.bwClassName
     })
-    // const timer = setTimeout(() => {
-    //   this.setData({
-    //     bwClassName: false
-    //   })
-    //   clearTimeout(timer)
-    // }, 600)
   },
   // 在地图上手动标点
   addPoint({ detail }) {
@@ -142,13 +136,19 @@ module.exports = {
     this.setData({
       traffic: !this.data.traffic
     })
-    const endPoint = JSON.stringify({  //终点
+    let startPoint = {
+      'name': markers[1].name || '起点',
+      'latitude': markers[1].latitude,
+      'longitude': markers[1].longitude
+    }
+    let endPoint = {
       'name': markers[0].name || '终点',
       'latitude': markers[0].latitude,
       'longitude': markers[0].longitude
-    });
+    }
+    let params = `key=${key}&referer=${referer}&startPoint=${JSON.stringify(startPoint)}&endPoint=${JSON.stringify(endPoint)}`
     wx.navigateTo({
-      url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint,
+      url: 'plugin://routePlan/index?' + params,
       navigation: 1,
       success(res) {
         _this.setData({
