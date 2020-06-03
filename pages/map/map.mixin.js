@@ -80,7 +80,15 @@ module.exports = {
         if (confirm) {
           // 添加标点
           const markers = _this.data.markers
+          const includePoints = _this.data.includePoints
           let tapCount = _this.data.tapCount
+          if (tapCount === 1) { // 首次添加
+            includePoints.push({
+              id: 0,
+              latitude: _this.data.latitude,
+              longitude: _this.data.longitude
+            })
+          }
           markers.unshift({
             id: tapCount++,
             ...detail,
@@ -88,9 +96,12 @@ module.exports = {
             width: '50rpx',
             height: '50rpx'
           })
+          includePoints.unshift({ ...detail, id: tapCount++ })
+          console.log(includePoints)
           _this.setData({
             tapCount,
-            markers
+            markers,
+            includePoints
           })
         }
         if (cancel) {
@@ -109,11 +120,16 @@ module.exports = {
       success({ confirm, cancel }) {
         if (confirm) {
           let markers = _this.data.markers
+          let includePoints = _this.data.includePoints
           markers = markers.filter(item => item.id !== markerId)
-          _this.setData({ markers })
+          includePoints = includePoints.filter(item => item.id !== markerId)
+          _this.setData({ 
+            markers,
+            includePoints
+          })
         }
         if (cancel) {
-
+          // 取消
         }
       }
     })
@@ -136,24 +152,23 @@ module.exports = {
     this.setData({
       traffic: !this.data.traffic
     })
-    let startPoint = {
+    let startPoint = JSON.stringify({
       'name': markers[1].name || '起点',
       'latitude': markers[1].latitude,
       'longitude': markers[1].longitude
-    }
-    let endPoint = {
+    })
+    let endPoint = JSON.stringify({
       'name': markers[0].name || '终点',
       'latitude': markers[0].latitude,
       'longitude': markers[0].longitude
-    }
-    let params = `key=${key}&referer=${referer}&startPoint=${JSON.stringify(startPoint)}&endPoint=${JSON.stringify(endPoint)}`
+    })
+    let params = `key=${key}&referer=${referer}&startPoint=${startPoint}&endPoint=${endPoint}&mode=driving&navigation=1`
     wx.navigateTo({
       url: 'plugin://routePlan/index?' + params,
-      navigation: 1,
       success(res) {
         _this.setData({
           scale: 18,
-          traffic: false
+          traffic: true
         })
       },
       fail(err) {

@@ -12,7 +12,8 @@ Page({
     markers: [],
     tapCount: 1,
     pointMode: false,
-    bwClassName: false
+    bwClassName: false,
+    includePoints: [] // 包含的标点
   },
   onShow(opt) {
     const _this = this

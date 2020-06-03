@@ -15,6 +15,7 @@
     enable-rotate="{{true}}"
     enable-satellite="{{satellite}}"
     enable-traffic="{{traffic}}"
+    include-points="{{includePoints}}"
     markers="{{markers}}"
     latitude="{{latitude}}"
     longitude="{{longitude}}"
