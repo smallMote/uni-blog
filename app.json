@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/about/about",
     "pages/home/home",
     "pages/map/map",
     "pages/article/article",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
@@ -43,7 +43,7 @@
         "selectedIconPath": "pages/asstes/local-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/about/about",
         "text": "Me",
         "iconPath": "pages/asstes/me.png",
         "selectedIconPath": "pages/asstes/me-active.png"

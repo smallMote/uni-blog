@@ -19,11 +19,6 @@
 .usermotto {
   margin-top: 200px;
 }
-
-.about {
-  position: absolute;
-  bottom: 30rpx;
-}
 .tips {
   font-size: 32rpx;
   padding: 25rpx;
@@ -41,6 +36,16 @@
 }
 .tips .p {
   display: block;
+}
+.about .p {
+  color: #999;
+}
+.about .link {
+  color: seagreen;
+  text-decoration: underline;
+}
+.about-item {
+  margin-bottom: 25rpx;
 }
 .tips .p.first {
   padding-bottom: 30rpx;

@@ -11,12 +11,22 @@
     <view class="tips">
       <text class="title">Tips ！！！</text>
       <text class="p first">由于这是个人开发小程序，在微信小程序运营规范下，超链接不支持跳转，目前正在寻找替代方案！</text>
-      <text class="p">开源地址:</text>
-      <text class="p">https://github.com/smallMote/uni-blog.git</text>
     </view>
     <!-- <button class="" bind:tap="openScanCode">扫一扫</button> -->
     <view class="about">
-      <image src="https://s2.ax1x.com/2019/08/05/eRwoq0.png" />
+      <!-- <image src="https://s2.ax1x.com/2019/08/05/eRwoq0.png" /> -->
+      <view class="about-item">
+        <view class="p">博客地址:</view>
+        <text class="p link">https://www.wlittleyang.com</text>
+      </view>
+      <view class="about-item">
+        <view class="p">CSDN:</view>
+        <text class="p link">https://blog.csdn.net/Mote123</text>
+      </view>
+      <view class="about-item">
+        <view class="p">开源地址:</view>
+        <text class="p link">https://github.com/smallMote/uni-blog.git</text>
+      </view>
     </view>
   </view>
 </view>

@@ -1,5 +1,5 @@
 //index.js
-const mixin = require('./index.mixin')
+const mixin = require('./about.mixin')
 //获取应用实例
 const app = getApp()
 
