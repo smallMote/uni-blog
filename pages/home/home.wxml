@@ -9,6 +9,7 @@
     createDate="{{item.createTime}}" 
     summary="{{item.summary}}"
     coverImgUrl="{{item.coverImgUrl}}"
+    pageviews="{{item.pageviews}}"
   />
   <back-top wx:if="{{scrollTop >= 900}}"></back-top>
 </view>

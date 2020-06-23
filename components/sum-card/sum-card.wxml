@@ -24,7 +24,7 @@
   <view class="footer">
     <view class="look">
       <text class="iconfont wx-eyes"></text>
-      10086
+      {{ pageviews }}
     </view>
     <button 
       open-type='share' 

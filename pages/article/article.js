@@ -9,10 +9,12 @@ Page({
     title: '',
     summary: '',
     comment: 0,
-    shares: 0
+    shares: 0,
+    pageviews: 0
   },
   onLoad({ id }) {
     this.setData({ id })
+    
     request('POST', {}, `/article/${id || 11}`)
       .then(({ code, data }) => {
         this.setData({

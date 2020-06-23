@@ -9,7 +9,7 @@
       <view class="info">
         <view class="comments">
           <text class="iconfont wx-eyes"></text>
-          {{ comments || 'No Comment' }}
+          {{ pageviews }} views
         </view>
         <button open-type='share' class="shares">
           <text class="iconfont wx-share"></text>

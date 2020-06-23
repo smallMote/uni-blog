@@ -11,6 +11,8 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+    // 测试设置全局变量
+    this.globalData.uname = 'Larry'
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -33,6 +35,7 @@ App({
     })
   },
   globalData: {
+    uname: '',
     userInfo: null
   }
 })
