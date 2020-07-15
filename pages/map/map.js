@@ -15,6 +15,13 @@ Page({
     bwClassName: false,
     includePoints: [] // 包含的标点
   },
+  onLoad() {
+    // 开启分享至朋友圈
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
+  },
   onShow(opt) {
     const _this = this
     wx.getSetting({

@@ -7,7 +7,11 @@ Page({
     scrollTop: 0
   },
   onLoad() {
-    console.log(app.globalData)
+    // 开启分享至朋友圈
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
     request('GET', '', '/article')
       .then(res => {
         this.setData({

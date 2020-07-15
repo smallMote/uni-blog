@@ -13,8 +13,12 @@ Page({
     pageviews: 0
   },
   onLoad({ id }) {
+    // 开启分享至朋友圈
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
     this.setData({ id })
-    
     request('POST', {}, `/article/${id || 11}`)
       .then(({ code, data }) => {
         this.setData({

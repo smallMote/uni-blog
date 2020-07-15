@@ -33,6 +33,11 @@ App({
         }
       }
     })
+    // 开启分享至朋友圈
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
   },
   globalData: {
     uname: '',
